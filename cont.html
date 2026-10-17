@@ -1,0 +1,312 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Aashvi Jewels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <link href="cont.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg pastel-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./imageee/logooooooo.png" alt="Jewels Logo" class="img-fluid" style="max-height: 60px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pastelMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="pastelMenu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rings.html">Rings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="neck.html">Necklaces</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cont.html">Contact</a></li>
+                    <li class="nav-item pastel-icons">
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-bag"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="contact-header container-fluid py-5">
+        <div class="container">
+            <h1 class="mb-3 text-center">Get In Touch</h1>
+            <p class="lead text-center">We'd love to hear from you. Reach out to us with any questions or inquiries.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row g-5 py-5">
+                <!-- Contact Information -->
+                <div class="col-lg-4">
+                    <div class="info-section">
+                        <h3 class="mb-4">Contact Information</h3>
+                        
+                        <!-- Address -->
+                        <div class="info-item mb-4">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h6>Address</h6>
+                                <p>Aashvi Jewels Studio<br>123 Diamond Lane<br>Jewelry District, City 560001<br>India</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="info-item mb-4">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h6>Phone</h6>
+                                <p>+91-9876543210<br>+91-9123456789<br>Mon - Sat: 10 AM - 6 PM</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="info-item mb-4">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h6>Email</h6>
+                                <p><a href="mailto:info@aashvijewels.com">info@aashvijewels.com</a><br><a href="mailto:support@aashvijewels.com">support@aashvijewels.com</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Business Hours -->
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h6>Business Hours</h6>
+                                <p>Monday - Friday: 10 AM - 6 PM<br>Saturday: 11 AM - 5 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="social-section mt-5">
+                            <h6>Follow Us</h6>
+                            <div class="social-links">
+                                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <div class="form-section">
+                        <h3 class="mb-4">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="row">
+                                <!-- Name -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone" name="phone">
+                                </div>
+
+                                <!-- Subject -->
+                                <div class="col-md-6 mb-3">
+                                    <label for="subject" class="form-label">Subject *</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" required>
+                                </div>
+
+                                <!-- Category -->
+                                <div class="col-md-12 mb-3">
+                                    <label for="category" class="form-label">Inquiry Type *</label>
+                                    <select class="form-select" id="category" name="category" required>
+                                        <option value="">Select a category...</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="order">Order Related</option>
+                                        <option value="customization">Customization</option>
+                                        <option value="repair">Repair Services</option>
+                                        <option value="wholesale">Wholesale/Bulk Order</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <!-- Message -->
+                                <div class="col-md-12 mb-3">
+                                    <label for="message" class="form-label">Message *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                </div>
+
+                                <!-- Checkbox -->
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter" name="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter for exclusive offers and updates
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-submit btn-lg">Send Message</button>
+                                    <button type="reset" class="btn btn-reset btn-lg ms-2">Clear</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="formMessage" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="container-fluid map-section py-5">
+        <div class="container">
+            <h3 class="mb-4 text-center">Find Us</h3>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5739400999767!2d77.59899!3d12.97194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1581e7e7e7e7%3A0x7e7e7e7e7e7e7e7e!2sJewelry%20District!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="container-fluid faq-section py-5 bg-light">
+        <div class="container">
+            <h3 class="mb-5 text-center">Frequently Asked Questions</h3>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="faq-item mb-3">
+                        <h6 class="faq-question">
+                            <i class="fas fa-chevron-right"></i> Do you offer customization services?
+                        </h6>
+                        <p class="faq-answer">Yes! We offer bespoke jewelry customization. Contact us to discuss your unique design ideas.</p>
+                    </div>
+                    <div class="faq-item mb-3">
+                        <h6 class="faq-question">
+                            <i class="fas fa-chevron-right"></i> What is your return policy?
+                        </h6>
+                        <p class="faq-answer">We offer a 30-day return policy on all jewelry items for full refunds or exchanges.</p>
+                    </div>
+                    <div class="faq-item mb-3">
+                        <h6 class="faq-question">
+                            <i class="fas fa-chevron-right"></i> Do you provide warranty?
+                        </h6>
+                        <p class="faq-answer">Yes, all our jewelry comes with a 1-year manufacturing warranty against defects.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="faq-item mb-3">
+                        <h6 class="faq-question">
+                            <i class="fas fa-chevron-right"></i> How long does shipping take?
+                        </h6>
+                        <p class="faq-answer">We offer free shipping across India. Delivery typically takes 5-7 business days.</p>
+                    </div>
+                    <div class="faq-item mb-3">
+                        <h6 class="faq-question">
+                            <i class="fas fa-chevron-right"></i> Do you offer repair services?
+                        </h6>
+                        <p class="faq-answer">Yes, we provide professional jewelry repair and maintenance services. Contact us for more details.</p>
+                    </div>
+                    <div class="faq-item mb-3">
+                        <h6 class="faq-question">
+                            <i class="fas fa-chevron-right"></i> Can I visit your studio?
+                        </h6>
+                        <p class="faq-answer">Absolutely! We welcome walk-ins. It's best to call ahead to ensure someone is available.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="container-fluid footer-dark py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6>About Us</h6>
+                    <p class="small footer-muted">Aashvi Jewels offers premium jewelry collections crafted with precision and elegance.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="home.html" class="footer-muted text-decoration-none">Home</a></li>
+                        <li><a href="collections.html" class="footer-muted text-decoration-none">Collections</a></li>
+                        <li><a href="rings.html" class="footer-muted text-decoration-none">Rings</a></li>
+                        <li><a href="neck.html" class="footer-muted text-decoration-none">Necklaces</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Contact</h6>
+                    <p class="small footer-muted">Email: info@aashvijewels.com<br>Phone: +91-9876543210</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Follow Us</h6>
+                    <div class="social-links">
+                        <a href="#" class="footer-muted me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="footer-muted me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-muted me-2"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center footer-muted small mb-0">&copy; 2026 Aashvi Jewels. All rights reserved.</p>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            
+            const formMessage = document.getElementById('formMessage');
+            formMessage.innerHTML = '<div class="alert alert-success" role="alert"><strong>Thank you, ' + name + '!</strong> Your message has been sent successfully. We\'ll get back to you soon at ' + email + '.</div>';
+            
+            // Reset form after 2 seconds
+            setTimeout(() => {
+                document.getElementById('contactForm').reset();
+                formMessage.innerHTML = '';
+            }, 3000);
+        });
+
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

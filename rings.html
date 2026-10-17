@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold & Silver Rings - Aashvi Jewels</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+    <link href="rings.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg pastel-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="home.html"><img src="./imageee/logooooooo.png" alt="Jewels Logo" class="img-fluid" style="max-height: 60px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#pastelMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="pastelMenu">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="rings.html">Rings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="neck.html">Necklaces</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cont.html">Contact</a></li>
+                    <li class="nav-item pastel-icons">
+                        <i class="bi bi-search"></i>
+                        <i class="bi bi-heart"></i>
+                        <i class="bi bi-bag"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="rings-header container-fluid py-5">
+        <div class="container">
+            
+            <h1 class="mb-3 text-center">Gold & Silver Rings</h1>
+            <p class="lead text-center">Discover our exquisite collection of elegant gold and silver rings, crafted with precision and style.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row g-4 py-5">
+                <!-- Sidebar Filter -->
+                <div class="col-lg-3">
+                    <div class="filter-section">
+                        <h5 class="mb-4">Filter Rings</h5>
+
+                        <!-- Material Filter -->
+                        <div class="filter-group">
+                            <h6>Material</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gold" value="gold" checked>
+                                <label class="form-check-label" for="gold">Gold</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="silver" value="silver" checked>
+                                <label class="form-check-label" for="silver">Silver</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="platinum" value="platinum">
+                                <label class="form-check-label" for="platinum">Platinum</label>
+                            </div>
+                        </div>
+
+                        <!-- Price Filter -->
+                        <div class="filter-group">
+                            <h6>Price Range</h6>
+                            <input type="range" class="form-range" id="priceRange" min="500" max="15000" step="500" value="7500">
+                            <div class="d-flex justify-content-between mt-2">
+                                <span>₹500</span>
+                                <span id="priceValue">₹7,500</span>
+                                <span>₹15,000</span>
+                            </div>
+                        </div>
+
+                        <!-- Category Filter -->
+                        <div class="filter-group">
+                            <h6>Category</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="solitaire" value="solitaire">
+                                <label class="form-check-label" for="solitaire">Solitaire</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gemstone" value="gemstone">
+                                <label class="form-check-label" for="gemstone">Gemstone</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="casual" value="casual" checked>
+                                <label class="form-check-label" for="casual">Casual</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="wedding" value="wedding">
+                                <label class="form-check-label" for="wedding">Wedding</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="col-lg-9">
+                    <!-- Top Bar -->
+                    <div class="mb-4 d-flex justify-content-between align-items-center">
+                        <p class="text-muted mb-0">Showing <strong>18</strong> rings</p>
+                        <div>
+                            <label for="sortBy" class="me-2">Sort by:</label>
+                            <select class="form-select-sm" id="sortBy">
+                                <option>Newest</option>
+                                <option>Price: Low to High</option>
+                                <option>Price: High to Low</option>
+                                <option>Most Popular</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products -->
+                    <div class="row g-4" id="productsGrid">
+                        <!-- Gold Rings -->
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product-card">
+                                <div class="product-image-wrapper">
+                                    <img src="./imageee/10k-14k__Gold_Rings.jpg" alt="Classic Gold Ring" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                    <div class="product-overlay">
+                                        <div class="btn-group">
+                                            <button class="btn btn-sm btn-danger" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="Wishlist"><i class="fas fa-heart"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="View"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <p class="product-title">Classic Gold Ring</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span>(156)</span>
+                                    </div>
+                                    <p class="price mt-2">₹4,999</p>
+                                    <span class="badge bg-danger">Gold</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product-card">
+                                <div class="product-image-wrapper">
+                                    <img src="./imageee/il_1080xN.5203235656_qigh.webp" alt="Silver Ring with Stone" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                    <div class="product-overlay">
+                                        <div class="btn-group">
+                                            <button class="btn btn-sm btn-danger" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="Wishlist"><i class="fas fa-heart"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="View"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <p class="product-title">Silver Ring With Stone</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>(203)</span>
+                                    </div>
+                                    <p class="price mt-2">₹2,499</p>
+                                    <span class="badge bg-info">Silver</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product-card">
+                                <div class="product-image-wrapper">
+                                    <img src="./imageee/ring 3piece set.webp" alt="Elegant Silver Ring" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                    <div class="product-overlay">
+                                        <div class="btn-group">
+                                            <button class="btn btn-sm btn-danger" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="Wishlist"><i class="fas fa-heart"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="View"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <p class="product-title">Elegant Silver Ring</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>(312)</span>
+                                    </div>
+                                    <p class="price mt-2">₹1,999</p>
+                                    <span class="badge bg-info">Silver</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product-card">
+                                <div class="product-image-wrapper">
+                                    <img src="./imageee/img888.jpg" alt="Vintage Gold Ring" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                    <div class="product-overlay">
+                                        <div class="btn-group">
+                                            <button class="btn btn-sm btn-danger" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="Wishlist"><i class="fas fa-heart"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="View"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <p class="product-title">Vintage Gold Ring</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <span>(145)</span>
+                                    </div>
+                                    <p class="price mt-2">₹7,499</p>
+                                    <span class="badge bg-danger">Gold</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product-card">
+                                <div class="product-image-wrapper">
+                                    <img src="./imageee/add.jpg" alt="Pearl Silver Ring" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                    <div class="product-overlay">
+                                        <div class="btn-group">
+                                            <button class="btn btn-sm btn-danger" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="Wishlist"><i class="fas fa-heart"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="View"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <p class="product-title">Pearl Silver Ring</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>(267)</span>
+                                    </div>
+                                    <p class="price mt-2">₹1,999</p>
+                                    <span class="badge bg-info">Silver</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product-card">
+                                <div class="product-image-wrapper">
+                                    <img src="./imageee/add.jpg" alt="Rose Gold Ring" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                    <div class="product-overlay">
+                                        <div class="btn-group">
+                                            <button class="btn btn-sm btn-danger" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="Wishlist"><i class="fas fa-heart"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="View"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <p class="product-title">Rose Gold Ring</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>(198)</span>
+                                    </div>
+                                    <p class="price mt-2">₹5,999</p>
+                                    <span class="badge bg-danger">Gold</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product-card">
+                                <div class="product-image-wrapper">
+                                    <img src="./imageee/img999.jpg" alt="Minimalist Silver Ring" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                    <div class="product-overlay">
+                                        <div class="btn-group">
+                                            <button class="btn btn-sm btn-danger" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="Wishlist"><i class="fas fa-heart"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="View"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <p class="product-title">Minimalist Silver Ring</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>(289)</span>
+                                    </div>
+                                    <p class="price mt-2">₹1,999</p>
+                                    <span class="badge bg-info">Silver</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="product-card">
+                                <div class="product-image-wrapper">
+                                    <img src="./imageee/img888.jpg" alt="Wedding Gold Ring" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                                    <div class="product-overlay">
+                                        <div class="btn-group">
+                                            <button class="btn btn-sm btn-danger" title="Add to Cart"><i class="fas fa-shopping-bag"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="Wishlist"><i class="fas fa-heart"></i></button>
+                                            <button class="btn btn-sm btn-outline-danger ms-2" title="View"><i class="fas fa-eye"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-3">
+                                    <p class="product-title">Wedding Gold Ring</p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span>(421)</span>
+                                    </div>
+                                    <p class="price mt-2">₹12,499</p>
+                                    <span class="badge bg-danger">Gold</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h6 class="mb-3">About Aashvi Jewels</h6>
+                    <p>Crafting elegant jewelry for every occasion with premium materials and exquisite designs.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <p><a href="#">Collections</a></p>
+                    <p><a href="#">Gold Rings</a></p>
+                    <p><a href="#">Silver Rings</a></p>
+                    <p><a href="#">Contact</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Customer Service</h6>
+                    <p><a href="#">Shipping Info</a></p>
+                    <p><a href="#">Returns</a></p>
+                    <p><a href="#">FAQ</a></p>
+                    <p><a href="#">Support</a></p>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="mb-3">Follow Us</h6>
+                    <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2026 Aashvi Jewels. All rights reserved.</p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Price range update
+        document.getElementById('priceRange').addEventListener('input', function() {
+            const value = this.value;
+            document.getElementById('priceValue').textContent = '₹' + parseInt(value).toLocaleString('en-IN');
+        });
+
+        // Wishlist toggle
+        document.querySelectorAll('.btn-outline-danger').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                this.classList.toggle('active');
+                if (this.classList.contains('active')) {
+                    this.style.backgroundColor = '#d4a48a';
+                    this.style.color = '#fff';
+                } else {
+                    this.style.backgroundColor = 'transparent';
+                    this.style.color = '#d4a48a';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

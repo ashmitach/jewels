@@ -1,0 +1,190 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.about-body {
+  background-color: #fff7f9;
+  color: #4c3639;
+  font-family: 'Playfair Display', serif;
+}
+
+.pastel-navbar {
+  background: linear-gradient(90deg, #fcefee, #f9e0d9);
+  border-bottom: 2px solid #e6b8af;
+  padding: 14px 0;
+}
+
+.pastel-navbar .nav-link {
+  color: #7a4a4f !important;
+  margin-left: 18px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.pastel-navbar .nav-link.active,
+.pastel-navbar .nav-link:hover {
+  color: #b76e79 !important;
+}
+.pastel-icons i {
+  color: #b76e79;
+  font-size: 18px;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.hero-section {
+  min-height: 70vh;
+  background-image: linear-gradient(180deg, rgba(89, 49, 43, 0.72), rgba(246, 235, 236, 0.88)), url('./imageee/rznokxhxmhjjbnqj1ztl.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
+}
+
+.eyebrow {
+  color: #d18f7a;
+  font-family: 'Poiret One', cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+ 
+  margin-bottom: 1rem;
+}
+
+.hero-title {
+  font-size: clamp(2.6rem, 4vw, 4.8rem);
+  line-height: 1.05;
+  letter-spacing: 1px;
+}
+
+.hero-text {
+  max-width: 640px;
+  margin-top: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.shop-btn {
+  margin-top: 2rem;
+  background-color: #60462f;
+  border: none;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 50px;
+  box-shadow: 0 12px 30px rgba(96, 70, 47, 0.2);
+}
+
+.shop-btn:hover {
+  background-color: #7d5e51;
+}
+
+.story-section,
+.craft-section,
+.team-section {
+  color: #4c3639;
+}
+
+.story-card,
+.craft-card,
+.value-card,
+.feature-card {
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid rgba(96, 70, 47, 0.12);
+}
+
+.story-card h2,
+.craft-card h2,
+.value-card h3,
+.feature-card h3 {
+  color: #6d3f3f;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.story-card p,
+.craft-card p,
+.value-card p,
+.feature-card p,
+.section-text {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #5f4145;
+}
+
+.bg-soft {
+  background-color: #f8eff0;
+}
+
+.values-section .value-card,
+.team-section .feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.values-section .value-card:hover,
+.team-section .feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(96, 70, 47, 0.12);
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-gold {
+  color: #b76e79;
+}
+
+.section-text {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+footer.footer-section {
+  background: #37231f;
+  color: #f3e7e7;
+}
+
+footer.footer-section h5 {
+  color: #f7d2d2;
+  margin-bottom: 1rem;
+}
+
+footer.footer-section p,
+footer.footer-section li a {
+  color: rgba(243, 231, 231, 0.9);
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 90px 0;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 70px 0;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .shop-btn {
+    width: 100%;
+  }
+}

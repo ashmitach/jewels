@@ -1,0 +1,343 @@
+/* Contact Page Styles */
+
+/* Header Section */
+.contact-header {
+    background: linear-gradient(135deg, #fef8f3 0%, #fdf5ee 25%, #fcf0e8 50%, #fef7f3 75%, #fffbf8 100%);
+    border-bottom: 1px solid #f5dcc8;
+    box-shadow: 0 1px 4px rgba(200, 160, 140, 0.08);
+}
+
+.contact-header h1 {
+    color: #4a3a2a;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.contact-header p {
+    color: #5a4a3a;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* Info Section */
+.info-section {
+    background: linear-gradient(135deg, #fef5f0 0%, #fde8df 100%);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #f5dcc8;
+    box-shadow: 0 1px 4px rgba(200, 160, 140, 0.06);
+    height: 100%;
+}
+
+.info-item {
+    display: flex;
+    gap: 15px;
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #d4a48a 0%, #c49175 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+}
+
+.info-item h6 {
+    color: #4a3a2a;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.info-item p {
+    color: #5a4a3a;
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.info-item a {
+    color: #d4a48a;
+    text-decoration: none;
+}
+
+.info-item a:hover {
+    text-decoration: underline;
+}
+
+/* Social Links */
+.social-section h6 {
+    color: #4a3a2a;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #d4a48a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #c49175;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(212, 164, 138, 0.3);
+}
+
+/* Form Section */
+.form-section {
+    background: linear-gradient(135deg, #fef5f0 0%, #fde8df 100%);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #f5dcc8;
+    box-shadow: 0 1px 4px rgba(200, 160, 140, 0.06);
+}
+
+.form-section h3 {
+    color: #4a3a2a;
+    font-weight: 600;
+}
+
+.form-label {
+    color: #5a4a3a;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #f5dcc8;
+    background-color: white;
+    color: #4a3a2a;
+    padding: 0.75rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #d4a48a;
+    box-shadow: 0 0 0 0.2rem rgba(212, 164, 138, 0.25);
+    background-color: white;
+    color: #4a3a2a;
+}
+
+.form-control::placeholder {
+    color: #999;
+}
+
+textarea.form-control {
+    resize: vertical;
+    font-family: inherit;
+}
+
+.form-check-input {
+    border-color: #d4a48a;
+    accent-color: #d4a48a;
+}
+
+.form-check-label {
+    color: #5a4a3a;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+/* Submit Buttons */
+.btn-submit {
+    background: linear-gradient(135deg, #d4a48a 0%, #c49175 100%);
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 2.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(212, 164, 138, 0.3);
+    background: linear-gradient(135deg, #c49175 0%, #b37f60 100%);
+    color: white;
+}
+
+.btn-reset {
+    background: white;
+    border: 1px solid #d4a48a;
+    color: #d4a48a;
+    font-weight: 600;
+    padding: 0.75rem 2.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-reset:hover {
+    background: #d4a48a;
+    color: white;
+}
+
+/* Form Message */
+.alert {
+    border-radius: 6px;
+    border: none;
+}
+
+.alert-success {
+    background-color: #d4f1d4;
+    color: #155724;
+}
+
+/* Map Section */
+.map-section {
+    background: linear-gradient(135deg, #fef8f3 0%, #fffbf8 100%);
+}
+
+.map-section h3 {
+    color: #4a3a2a;
+    font-weight: 600;
+}
+
+.map-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(200, 160, 140, 0.15);
+    border: 1px solid #f5dcc8;
+}
+
+/* FAQ Section */
+.faq-section {
+    background: linear-gradient(135deg, #fef5f0 0%, #fde8df 100%);
+}
+
+.faq-section h3 {
+    color: #4a3a2a;
+    font-weight: 600;
+}
+
+.faq-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #f5dcc8;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 8px rgba(200, 160, 140, 0.1);
+    border-color: #d4a48a;
+}
+
+.faq-question {
+    color: #4a3a2a;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faq-question i {
+    color: #d4a48a;
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-question:hover i {
+    color: #c49175;
+}
+
+.faq-answer {
+    color: #5a4a3a;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .info-section,
+    .form-section {
+        margin-bottom: 30px;
+    }
+
+    .map-container iframe {
+        height: 300px !important;
+    }
+
+    .btn-submit,
+    .btn-reset {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+}
+
+/* Animations */
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-item,
+.faq-item {
+    animation: slideInUp 0.5s ease-out;
+}
+
+/* Dark footer */
+.footer-dark {
+    background: #241b1c;
+    color: #fff;
+}
+
+.footer-dark h6 {
+    color: #f4dfc0;
+}
+
+.footer-muted {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.footer-dark a:hover {
+    color: #f4dfc0;
+}
+
+.footer-dark hr {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Focus states for accessibility */
+.form-control:focus-visible,
+.form-select:focus-visible,
+.btn:focus-visible {
+    outline: 2px solid #d4a48a;
+    outline-offset: 2px;
+}
